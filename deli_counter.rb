@@ -19,7 +19,7 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{position + 1} in line."
 end
 
-$counter = 0
+$counter = 1
 def your_number
   $counter += 1
 puts "Welcome! You are number #{$counter} in line."
