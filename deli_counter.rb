@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli = []
+katz_deli = ["Barb"]
 
 def line(katz_deli)
   if katz_deli.empty?
