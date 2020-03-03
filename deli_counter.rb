@@ -19,9 +19,10 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{position + 1} in line."
 end
 
-def youre_number
-
-puts "Welcome! You are number #{} in line."
+$counter = 0
+def your_number
+  $counter += 1
+puts "Welcome! You are number #{$counter} in line."
 end
 
 
@@ -29,7 +30,9 @@ def now_serving(katz_deli)
   if katz_deli.empty?
 puts "There is nobody waiting to be served!"
   else
-  puts "Currently serving #{katz_deli[0]}."
+  puts "Currently serving #{katz_deli[0]}. #{$counter}"
   katz_deli.shift
   end
 end
+
+now_serving(katz_deli)
